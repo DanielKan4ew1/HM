@@ -4,17 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2___16_
+namespace dr
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Vavedete (2) chislo");
-            string number = Console.ReadLine();
-            int dignumber = Convert.ToInt32(number,2);
-            string hexnumber = Convert.ToString(dignumber, 16);
-            Console.WriteLine("{0}[2]={1}[10]={2}[16]", number, dignumber,hexnumber.ToUpper());
+            Console.WriteLine("vavedete chisla za matrix 2x2");
+            int[,] Matrix = new int[2, 2];
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 2; j++)
+                {
+                    Matrix [i,j] =int.Parse(Console.ReadLine());
+                }
+            }
+            
+
         }
     }
 }
